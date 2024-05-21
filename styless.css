@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.tablero-juego {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carta {
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.carta.volteada {
+    background-color: #ebd9d9;
+    color: #000000;
+}
+
+.carta.emparejada {
+    background-color: #0f0;
+    color: #fff;
+}
